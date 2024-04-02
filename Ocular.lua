@@ -837,18 +837,14 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
     local On = "rbxassetid://16978941820"
     local Off = "rbxassetid://16978802258"
     
-    local function processBalls()
+    local function onToggleButtonClicked()
+        toggleState = not toggleState
+        toggleButton.Image = toggleState and On or Off
         local localPlayer = game.Players.LocalPlayer
         local playerName = localPlayer.Name
-        local ballsFolder = game.Workspace:FindFirstChild("Balls")
-        if not ballsFolder then return end
-        local rootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
-        if not rootPart then return end
-    
-        for _, ball in pairs(ballsFolder:GetChildren()) do
-            if ball:IsA("BasePart") then
-                local distance = (ball.Position - rootPart.Position).magnitude
-                while distance <= 65 do
+            
+        if toggleState then
+            while toggleState do
                     local args = {
                         [1] = 0.15,
                         [2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
@@ -865,21 +861,7 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
                         }
                     }
                     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
-                    wait(0.1)
-                    if distance >= 65 then break
-                end
-            end
-        end
-    end
-    
-    local function onToggleButtonClicked()
-        toggleState = not toggleState
-        toggleButton.Image = toggleState and On or Off
-    
-        if toggleState then
-            while toggleState do
-                processBalls()
-                wait(0.1)
+                    wait(0.02)
             end
         end
     end
