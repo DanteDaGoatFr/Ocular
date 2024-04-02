@@ -1,3 +1,10 @@
+local pg = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+local ocular = pg and pg:FindFirstChild("Ocular")
+
+if ocular then
+    ocular:Destroy()
+end
+
 -- Instances:
 
 local Ocular = Instance.new("ScreenGui")
