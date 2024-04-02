@@ -858,7 +858,7 @@ local function TPMG_fake_script() -- ImageButton_6.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
-				wait(0.01)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
