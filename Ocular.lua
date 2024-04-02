@@ -867,7 +867,7 @@ local function TDRU_fake_script() -- ImageButton_6.LocalScript
 	    if toggleState then
 			while toggleState do
 				processBalls()
-				wait(0.02)
+				wait(0.05)
 				if not toggleState then 
 					break
 				end
