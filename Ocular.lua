@@ -866,7 +866,8 @@ local function TDRU_fake_script() -- ImageButton_6.LocalScript
 	
 	    if toggleState then
 			while toggleState do
-				RunService.Heartbeat:Connect(processBalls)
+				processBalls()
+				wait(0.02)
 				if not toggleState then 
 					break
 				end
