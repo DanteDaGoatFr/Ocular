@@ -848,7 +848,7 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
         for _, ball in pairs(ballsFolder:GetChildren()) do
             if ball:IsA("BasePart") then
                 local distance = (ball.Position - rootPart.Position).magnitude
-                if distance <= 50 then
+                while distance <= 65 do
                     local args = {
                         [1] = 0.15,
                         [2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
