@@ -866,6 +866,7 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
                     }
                     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
                     wait(0.1)
+                    if distance >= 65 then break
                 end
             end
         end
