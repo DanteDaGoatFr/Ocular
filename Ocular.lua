@@ -832,11 +832,31 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
     local script = Instance.new('LocalScript', ImageButton_6)
 
     local toggleButton = script.Parent
+
+    local RunService = game:GetService("RunService")
     
     local toggleState = false
     local On = "rbxassetid://16978941820"
     local Off = "rbxassetid://16978802258"
-    
+
+    local function heartBeat()
+        local args = {
+                [1] = 0.15,
+                [2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
+                [3] = {
+                    ["SimplyxClairre"] = Vector3.new(1107.897216796875, 190.91966247558594, 184.04312133789062),
+                    ["Theyfw_yaya31"] = Vector3.new(93.0799560546875, 192.8636474609375, 109.03349304199219),
+                    ["AliElReda2012"] = Vector3.new(1125.624755859375, 288.55072021484375, 28.741304397583008),
+                    ["FrostyWarrior125"] = Vector3.new(635.2930297851562, 233.45510864257812, 56.57038879394531),
+                    [playerName] = Vector3.new(719.9991455078125, 483.3870849609375, 13.022613525390625)
+                },
+                [4] = {
+                    [1] = 708.6796875,
+                    [2] = 321.03515625
+                    }
+                }
+        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+    end
     local function onToggleButtonClicked()
         toggleState = not toggleState
         toggleButton.Image = toggleState and On or Off
@@ -845,23 +865,8 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
             
         if toggleState then
             while toggleState do
-                    local args = {
-                        [1] = 0.15,
-                        [2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
-                        [3] = {
-                            ["SimplyxClairre"] = Vector3.new(1107.897216796875, 190.91966247558594, 184.04312133789062),
-                            ["Theyfw_yaya31"] = Vector3.new(93.0799560546875, 192.8636474609375, 109.03349304199219),
-                            ["AliElReda2012"] = Vector3.new(1125.624755859375, 288.55072021484375, 28.741304397583008),
-                            ["FrostyWarrior125"] = Vector3.new(635.2930297851562, 233.45510864257812, 56.57038879394531),
-                            [playerName] = Vector3.new(719.9991455078125, 483.3870849609375, 13.022613525390625)
-                        },
-                        [4] = {
-                            [1] = 708.6796875,
-                            [2] = 321.03515625
-                        }
-                    }
-                    game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
-                    wait(0.02)
+                RunService.Heartbeat:Connect(heartBeat)
+                if not toggleState then break
             end
         end
     end
