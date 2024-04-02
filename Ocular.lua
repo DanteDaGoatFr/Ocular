@@ -2,7 +2,7 @@ local pg = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 local ocular = pg and pg:FindFirstChild("Ocular")
 
 if ocular then
-    ocular:Destroy()
+	ocular:Destroy()
 end
 
 -- Instances:
@@ -461,502 +461,505 @@ Open.Image = "rbxassetid://16979249738"
 
 -- Scripts:
 
-local function JPIU_fake_script() -- ImageButton.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton)
+local function GNWNM_fake_script() -- ImageButton.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton)
 
-    
+	
 end
-coroutine.wrap(JPIU_fake_script)()
-local function SYMKEJW_fake_script() -- ImageButton_2.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton_2)
+coroutine.wrap(GNWNM_fake_script)()
+local function VFOPZ_fake_script() -- ImageButton_2.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_2)
 
-    local toggleButton = script.Parent  
-    
-    
-    local toggleState = false 
-    local On = "rbxassetid://16978941820"
-    local Off = "rbxassetid://16978802258"
-    
-    local function onToggleButtonClicked()
-        toggleState = not toggleState 
-    
-        if toggleState then
-    
-            toggleButton.Image = On
-    
-            while toggleState do
-                local args = {
-                    [1] = "collectOrb",
-                    [2] = "Yellow Orb",
-                    [3] = "City"
-                }
-    
-                game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-                wait(0.2)
-                if not toggleState then break end
-            end
-        else
-            toggleButton.Image = Off
-        end
-    end
-    
-    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
-    
+	local toggleButton = script.Parent  
+	
+	
+	local toggleState = false 
+	local On = "rbxassetid://16978941820"
+	local Off = "rbxassetid://16978802258"
+	
+	local function onToggleButtonClicked()
+		toggleState = not toggleState 
+	
+		if toggleState then
+	
+			toggleButton.Image = On
+	
+			while toggleState do
+				local args = {
+					[1] = "collectOrb",
+					[2] = "Yellow Orb",
+					[3] = "City"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
+				wait(0.2)
+				if not toggleState then break end
+			end
+		else
+			toggleButton.Image = Off
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+	
 end
-coroutine.wrap(SYMKEJW_fake_script)()
-local function ZKCHUI_fake_script() -- ImageButton_3.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton_3)
+coroutine.wrap(VFOPZ_fake_script)()
+local function REXQL_fake_script() -- ImageButton_3.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_3)
 
-    local toggleButton = script.Parent  
-    
-    
-    local toggleState = false 
-    local On = "rbxassetid://16978941820"
-    local Off = "rbxassetid://16978802258"
-    
-    local function onToggleButtonClicked()
-        toggleState = not toggleState 
-    
-        if toggleState then
-    
-            toggleButton.Image = On
-    
-            while toggleState do
-                local args = {
-                    [1] = "collectOrb",
-                    [2] = "Red Orb",
-                    [3] = "City"
-                }
-    
-                game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-                wait(0.2)
-                if not toggleState then break end
-            end
-        else
-            toggleButton.Image = Off
-        end
-    end
-    
-    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
-    
+	local toggleButton = script.Parent  
+	
+	
+	local toggleState = false 
+	local On = "rbxassetid://16978941820"
+	local Off = "rbxassetid://16978802258"
+	
+	local function onToggleButtonClicked()
+		toggleState = not toggleState 
+	
+		if toggleState then
+	
+			toggleButton.Image = On
+	
+			while toggleState do
+				local args = {
+					[1] = "collectOrb",
+					[2] = "Red Orb",
+					[3] = "City"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
+				wait(0.2)
+				if not toggleState then break end
+			end
+		else
+			toggleButton.Image = Off
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+	
 end
-coroutine.wrap(ZKCHUI_fake_script)()
-local function UNZV_fake_script() -- ImageButton_4.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton_4)
+coroutine.wrap(REXQL_fake_script)()
+local function BJNKRNS_fake_script() -- ImageButton_4.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_4)
 
-    local toggleButton = script.Parent  
-     
-    
-    local toggleState = false 
-    local On = "rbxassetid://16978941820"
-    local Off = "rbxassetid://16978802258"
-    
-    local function onToggleButtonClicked()
-        toggleState = not toggleState 
-    
-        if toggleState then
-            
-            toggleButton.Image = On
-            
-            while toggleState do
-                local args = {
-                    [1] = "collectOrb",
-                    [2] = "Gem",
-                    [3] = "City"
-                }
-    
-                game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-                wait(0.2)
-                if not toggleState then break end
-            end
-        else
-            toggleButton.Image = Off
-        end
-    end
-    
-    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
-    
+	local toggleButton = script.Parent  
+	 
+	
+	local toggleState = false 
+	local On = "rbxassetid://16978941820"
+	local Off = "rbxassetid://16978802258"
+	
+	local function onToggleButtonClicked()
+		toggleState = not toggleState 
+	
+		if toggleState then
+			
+			toggleButton.Image = On
+			
+			while toggleState do
+				local args = {
+					[1] = "collectOrb",
+					[2] = "Gem",
+					[3] = "City"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
+				wait(0.2)
+				if not toggleState then break end
+			end
+		else
+			toggleButton.Image = Off
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+	
 end
-coroutine.wrap(UNZV_fake_script)()
-local function HQIPMUV_fake_script() -- back.LocalScript 
-    local script = Instance.new('LocalScript', back)
+coroutine.wrap(BJNKRNS_fake_script)()
+local function SBGL_fake_script() -- back.LocalScript 
+	local script = Instance.new('LocalScript', back)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    
-    local buttonsToHide = {"Speed", "back", "Diamonds", "XP"}
-    
-    local buttonsToShow = {"Los", "Astro", "BladeBall"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	
+	local buttonsToHide = {"Speed", "back", "Diamonds", "XP"}
+	
+	local buttonsToShow = {"Los", "Astro", "BladeBall"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(HQIPMUV_fake_script)()
-local function ANUG_fake_script() -- TextButton.LocalScript 
-    local script = Instance.new('LocalScript', TextButton)
+coroutine.wrap(SBGL_fake_script)()
+local function HPLWZZM_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
-    local button = script.Parent
-    
-    local function onButtonClick()
-        local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-        local ocular = playerGui:FindFirstChild("Ocular")
-        local main = ocular and ocular:FindFirstChild("Main")
-        local scroll = main and main:FindFirstChild("Inside")
-        local astroItems = scroll and scroll:FindFirstChild("Astro")
-        local give = astroItems and astroItems:FindFirstChild("Give")
-        local textBox = give and give:FindFirstChild("TextBox")
-    
-        if textBox then
-            local args = {
-                [1] = "FinishClawMachine",
-                [2] = textBox.Text
-            }
-    
-            game:GetService("ReplicatedStorage"):WaitForChild("StartArcadeGame"):FireServer(unpack(args))
-    
-        end
-    end
-    
-    button.MouseButton1Click:Connect(onButtonClick)
-    
+	local button = script.Parent
+	
+	local function onButtonClick()
+		local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+		local ocular = playerGui:FindFirstChild("Ocular")
+		local main = ocular and ocular:FindFirstChild("Main")
+		local scroll = main and main:FindFirstChild("Inside")
+		local astroItems = scroll and scroll:FindFirstChild("Astro")
+		local give = astroItems and astroItems:FindFirstChild("Give")
+		local textBox = give and give:FindFirstChild("TextBox")
+	
+		if textBox then
+			local args = {
+				[1] = "FinishClawMachine",
+				[2] = textBox.Text
+			}
+	
+			game:GetService("ReplicatedStorage"):WaitForChild("StartArcadeGame"):FireServer(unpack(args))
+	
+		end
+	end
+	
+	button.MouseButton1Click:Connect(onButtonClick)
+	
 end
-coroutine.wrap(ANUG_fake_script)()
-local function LMNNDTF_fake_script() -- ImageButton_5.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton_5)
+coroutine.wrap(HPLWZZM_fake_script)()
+local function KWNQQVA_fake_script() -- ImageButton_5.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_5)
 
-    local toggleButton = script.Parent  
-    
-    
-    local toggleState = false 
-    local On = "rbxassetid://16978941820"
-    local Off = "rbxassetid://16978802258"
-    
-    local function onToggleButtonClicked()
-        toggleState = not toggleState 
-    
-        if toggleState then
-    
-            toggleButton.Image = On
-    
-            while toggleState do
-                local args = {
-                    [1] = "FinishFrozenStars"
-                }
-    
-                game:GetService("ReplicatedStorage"):WaitForChild("CitadelMain"):WaitForChild("WorkEvent"):FireServer(unpack(args))
-                wait(0.2)
-                if not toggleState then break end
-            end
-        else
-            toggleButton.Image = Off
-        end
-    end
-    
-    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
-    
+	local toggleButton = script.Parent  
+	
+	
+	local toggleState = false 
+	local On = "rbxassetid://16978941820"
+	local Off = "rbxassetid://16978802258"
+	
+	local function onToggleButtonClicked()
+		toggleState = not toggleState 
+	
+		if toggleState then
+	
+			toggleButton.Image = On
+	
+			while toggleState do
+				local args = {
+					[1] = "FinishFrozenStars"
+				}
+	
+				game:GetService("ReplicatedStorage"):WaitForChild("CitadelMain"):WaitForChild("WorkEvent"):FireServer(unpack(args))
+				wait(0.2)
+				if not toggleState then break end
+			end
+		else
+			toggleButton.Image = Off
+		end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+	
 end
-coroutine.wrap(LMNNDTF_fake_script)()
-local function GAUH_fake_script() -- back_2.LocalScript 
-    local script = Instance.new('LocalScript', back_2)
+coroutine.wrap(KWNQQVA_fake_script)()
+local function SQPHFYI_fake_script() -- back_2.LocalScript 
+	local script = Instance.new('LocalScript', back_2)
 
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    
-    local buttonsToHide = {"Give", "back", "Farm"}
-    
-    local buttonsToShow = {"Los", "Astro", "BladeBall"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false 
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true 
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro"):WaitForChild("back") 
-    hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	
+	local buttonsToHide = {"Give", "back", "Farm"}
+	
+	local buttonsToShow = {"Los", "Astro", "BladeBall"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false 
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true 
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro"):WaitForChild("back") 
+	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(GAUH_fake_script)()
-local function GRFG_fake_script() -- Astro_2.LocalScript 
-    local script = Instance.new('LocalScript', Astro_2)
+coroutine.wrap(SQPHFYI_fake_script)()
+local function XDCFQAL_fake_script() -- Astro_2.LocalScript 
+	local script = Instance.new('LocalScript', Astro_2)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
-    
-    local buttonsToHide = {"Los", "Astro", "BladeBall"}
-    
-    local buttonsToShow = {"Give", "Farm", "back"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true 
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
+	
+	local buttonsToHide = {"Los", "Astro", "BladeBall"}
+	
+	local buttonsToShow = {"Give", "Farm", "back"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true 
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(GRFG_fake_script)()
-local function GMHXI_fake_script() -- Los.LocalScript 
-    local script = Instance.new('LocalScript', Los)
+coroutine.wrap(XDCFQAL_fake_script)()
+local function HFGQI_fake_script() -- Los.LocalScript 
+	local script = Instance.new('LocalScript', Los)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
-    
-    local buttonsToHide = {"Los", "Astro", "BladeBall"}
-    
-    local buttonsToShow = {"Diamonds", "Speed", "XP", "back"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
+	
+	local buttonsToHide = {"Los", "Astro", "BladeBall"}
+	
+	local buttonsToShow = {"Diamonds", "Speed", "XP", "back"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(GMHXI_fake_script)()
-local function YHMSIWF_fake_script() -- BladeBall.LocalScript 
-    local script = Instance.new('LocalScript', BladeBall)
+coroutine.wrap(HFGQI_fake_script)()
+local function NKQJ_fake_script() -- BladeBall.LocalScript 
+	local script = Instance.new('LocalScript', BladeBall)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("BladeBall")
-    
-    local buttonsToHide = {"Los", "Astro", "BladeBall"}
-    
-    local buttonsToShow = {"AutoBlock", "back"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false 
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true 
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("BladeBall")
+	
+	local buttonsToHide = {"Los", "Astro", "BladeBall"}
+	
+	local buttonsToShow = {"AutoBlock", "back"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false 
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true 
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(YHMSIWF_fake_script)()
-local function OQGUBS_fake_script() -- ImageButton_6.LocalScript 
-    local script = Instance.new('LocalScript', ImageButton_6)
+coroutine.wrap(NKQJ_fake_script)()
+local function TDRU_fake_script() -- ImageButton_6.LocalScript 
+	local script = Instance.new('LocalScript', ImageButton_6)
 
-    local toggleButton = script.Parent
-
-    local RunService = game:GetService("RunService")
-    
-    local toggleState = false
-    local On = "rbxassetid://16978941820"
-    local Off = "rbxassetid://16978802258"
-
-    local function heartBeat()
-        local args = {
-                [1] = 0.15,
-                [2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
-                [3] = {
-                    ["SimplyxClairre"] = Vector3.new(1107.897216796875, 190.91966247558594, 184.04312133789062),
-                    ["Theyfw_yaya31"] = Vector3.new(93.0799560546875, 192.8636474609375, 109.03349304199219),
-                    ["AliElReda2012"] = Vector3.new(1125.624755859375, 288.55072021484375, 28.741304397583008),
-                    ["FrostyWarrior125"] = Vector3.new(635.2930297851562, 233.45510864257812, 56.57038879394531),
-                    [playerName] = Vector3.new(719.9991455078125, 483.3870849609375, 13.022613525390625)
-                },
-                [4] = {
-                    [1] = 708.6796875,
-                    [2] = 321.03515625
-                    }
-                }
-        game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
-    end
-    local function onToggleButtonClicked()
-        toggleState = not toggleState
-        toggleButton.Image = toggleState and On or Off
-        local localPlayer = game.Players.LocalPlayer
-        local playerName = localPlayer.Name
-            
-        if toggleState then
-            while toggleState do
-                RunService.Heartbeat:Connect(heartBeat)
-                if not toggleState then break
-            end
-        end
-    end
-    
-    toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
-    
+	local toggleButton = script.Parent
+	
+	local toggleState = false
+	local On = "rbxassetid://16978941820"
+	local Off = "rbxassetid://16978802258"
+	
+	local function processBalls()
+	    local localPlayer = game.Players.LocalPlayer
+	    local playerName = localPlayer.Name
+	    
+		local args = {
+			[1] = 0.15,
+			[2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
+			[3] = {
+				["SimplyxClairre"] = Vector3.new(1107.897216796875, 190.91966247558594, 184.04312133789062),
+				["Theyfw_yaya31"] = Vector3.new(93.0799560546875, 192.8636474609375, 109.03349304199219),
+				["AliElReda2012"] = Vector3.new(1125.624755859375, 288.55072021484375, 28.741304397583008),
+				["FrostyWarrior125"] = Vector3.new(635.2930297851562, 233.45510864257812, 56.57038879394531),
+				[playerName] = Vector3.new(719.9991455078125, 483.3870849609375, 13.022613525390625)
+			},
+			[4] = {
+				[1] = 708.6796875,
+				[2] = 321.03515625
+			}
+		}
+		game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+	end
+	
+	local function onToggleButtonClicked()
+		local RunService = game:GetService("RunService")
+	    toggleState = not toggleState
+	    toggleButton.Image = toggleState and On or Off
+	
+	    if toggleState then
+			while toggleState do
+				RunService.Heartbeat:Connect(processBalls)
+				if not toggleState then 
+					break
+				end
+	        end
+	    end
+	end
+	
+	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
+	
 end
-coroutine.wrap(OQGUBS_fake_script)()
-local function AFFQ_fake_script() -- back_3.LocalScript 
-    local script = Instance.new('LocalScript', back_3)
+coroutine.wrap(TDRU_fake_script)()
+local function CXYBL_fake_script() -- back_3.LocalScript 
+	local script = Instance.new('LocalScript', back_3)
 
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    local button = script.Parent
-    
-    local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("BladeBall")
-    local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
-    
-    local buttonsToHide = {"AutoBlock", "back"}
-    
-    local buttonsToShow = {"Los", "Astro", "BladeBall"}
-    
-    local function hideButtons()
-        for _, buttonName in pairs(buttonsToHide) do
-            local button = scrollingFrame:FindFirstChild(buttonName)
-            if button then
-                button.Visible = false 
-                button.Active = false
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-        for _, buttonName in pairs(buttonsToShow) do
-            local button = scrollmain:FindFirstChild(buttonName)
-            if button then
-                button.Visible = true
-                button.Active = true
-            else
-                warn("Button not found:", buttonName)
-            end
-        end
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	local button = script.Parent
+	
+	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("BladeBall")
+	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
+	
+	local buttonsToHide = {"AutoBlock", "back"}
+	
+	local buttonsToShow = {"Los", "Astro", "BladeBall"}
+	
+	local function hideButtons()
+		for _, buttonName in pairs(buttonsToHide) do
+			local button = scrollingFrame:FindFirstChild(buttonName)
+			if button then
+				button.Visible = false 
+				button.Active = false
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+		for _, buttonName in pairs(buttonsToShow) do
+			local button = scrollmain:FindFirstChild(buttonName)
+			if button then
+				button.Visible = true
+				button.Active = true
+			else
+				warn("Button not found:", buttonName)
+			end
+		end
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(AFFQ_fake_script)()
-local function GAAVTNW_fake_script() -- Close.LocalScript 
-    local script = Instance.new('LocalScript', Close)
+coroutine.wrap(CXYBL_fake_script)()
+local function ZPWV_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local main = playerGui:WaitForChild("Ocular")
-    
-    local function hideButtons()
-        main:Destroy()
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local main = playerGui:WaitForChild("Ocular")
+	
+	local function hideButtons()
+		main:Destroy()
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(GAAVTNW_fake_script)()
-local function MYHTXV_fake_script() -- Min.LocalScript 
-    local script = Instance.new('LocalScript', Min)
+coroutine.wrap(ZPWV_fake_script)()
+local function OGXG_fake_script() -- Min.LocalScript 
+	local script = Instance.new('LocalScript', Min)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    
-    local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
-    
-    
-    local function hideButtons()
-        main.Visible = false
-    end
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	
+	local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
+	
+	
+	local function hideButtons()
+		main.Visible = false
+	end
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(MYHTXV_fake_script)()
-local function IAQCIWT_fake_script() -- Open.LocalScript 
-    local script = Instance.new('LocalScript', Open)
+coroutine.wrap(OGXG_fake_script)()
+local function UHUHEL_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
 
-    local button = script.Parent
-    local playerGui = game.Players.LocalPlayer.PlayerGui
-    
-    local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
-    
-    local function hideButtons()
-        main.Visible = true
-    end
-    
-    
-    button.MouseButton1Click:Connect(hideButtons)
+	local button = script.Parent
+	local playerGui = game.Players.LocalPlayer.PlayerGui
+	
+	local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
+	
+	local function hideButtons()
+		main.Visible = true
+	end
+	
+	
+	button.MouseButton1Click:Connect(hideButtons)
 end
-coroutine.wrap(IAQCIWT_fake_script)()
+coroutine.wrap(UHUHEL_fake_script)()
