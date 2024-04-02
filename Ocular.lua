@@ -827,42 +827,6 @@ local function SGLF_fake_script() -- BladeBall.LocalScript
 	
 	button.MouseButton1Click:Connect(hideButtons)
 end
-
-local connection
-
-local function checkPositions()
-    local localPlayer = game.Players.LocalPlayer
-    local ballsFolder = game.Workspace:FindFirstChild("Balls")
-    if not ballsFolder then return end
-    
-    local rootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
-    if not rootPart then return end
-
-    for _, ball in pairs(ballsFolder:GetChildren()) do
-        if ball:IsA("BasePart") then
-            local distance = (ball.Position - rootPart.Position).magnitude
-            if distance <= 40 then
-                local args = {
-			[1] = 0.15,
-			[2] = CFrame.new(-280.8516540527344, 85.4913101196289, 36.45398712158203, 0.974371612071991, -0.0783732533454895, 0.21084962785243988, -7.450580596923828e-09, 0.9373415112495422, 0.34841188788414, -0.22494427859783173, -0.3394826650619507, 0.9133189916610718),
-			[3] = {
-				["SimplyxClairre"] = Vector3.new(1107.897216796875, 190.91966247558594, 184.04312133789062),
-				["Theyfw_yaya31"] = Vector3.new(93.0799560546875, 192.8636474609375, 109.03349304199219),
-				["AliElReda2012"] = Vector3.new(1125.624755859375, 288.55072021484375, 28.741304397583008),
-				["FrostyWarrior125"] = Vector3.new(635.2930297851562, 233.45510864257812, 56.57038879394531),
-				[playerName] = Vector3.new(719.9991455078125, 483.3870849609375, 13.022613525390625)
-			},
-			[4] = {
-				[1] = 708.6796875,
-				[2] = 321.03515625
-				}
-			}
-                game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
-            end
-        end
-    end
-end
-
 coroutine.wrap(SGLF_fake_script)()
 local function TPMG_fake_script() -- ImageButton_6.LocalScript 
 	local script = Instance.new('LocalScript', ImageButton_6)
