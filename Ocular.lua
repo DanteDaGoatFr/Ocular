@@ -492,7 +492,7 @@ local function VFOPZ_fake_script() -- ImageButton_2.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -529,7 +529,7 @@ local function REXQL_fake_script() -- ImageButton_3.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -566,7 +566,7 @@ local function BJNKRNS_fake_script() -- ImageButton_4.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -867,7 +867,7 @@ local function TDRU_fake_script() -- ImageButton_6.LocalScript
 	    if toggleState then
 			while toggleState do
 				processBalls()
-				wait(0.05)
+				wait(0.1)
 				if not toggleState then 
 					break
 				end
