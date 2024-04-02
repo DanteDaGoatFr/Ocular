@@ -865,6 +865,7 @@ local function OQGUBS_fake_script() -- ImageButton_6.LocalScript
                         }
                     }
                     game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("ParryAttempt"):FireServer(unpack(args))
+                    wait(0.01)
                 end
             end
         end
