@@ -828,11 +828,12 @@ local function SGLF_fake_script() -- BladeBall.LocalScript
 	button.MouseButton1Click:Connect(hideButtons)
 end
 
+local connection
+
 local function checkPositions()
-	local RunService = game:GetService("RunService")
-	local localPlayer = game.Players.LocalPlayer 
-	local ballsFolder = game.Workspace:FindFirstChild("Balls")
-	local playerName = localPlayer.Name
+    local localPlayer = game.Players.LocalPlayer
+    local ballsFolder = game.Workspace:FindFirstChild("Balls")
+    if not ballsFolder then return end
     
     local rootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
     if not rootPart then return end
@@ -875,20 +876,20 @@ local function TPMG_fake_script() -- ImageButton_6.LocalScript
 	local Off = "rbxassetid://16978802258"
 	
 	local function onToggleButtonClicked()
-		toggleState = not toggleState 
-	
-		if toggleState then
-			
-			toggleButton.Image = On
-			
-			while toggleState do
-				connection = RunService.Heartbeat:Connect(checkPositions)
-				wait(0.1)
-				if not toggleState then break end
-			end
-		else
-			toggleButton.Image = Off
-		end
+	    toggleState = not toggleState
+	    toggleButton.Image = toggleState and On or Off
+	    
+	    if toggleState then
+	        if not connection then
+	            connection = game:GetService("RunService").Heartbeat:Connect(checkPositions)
+	        end
+	    else
+
+	        if connection then
+	            connection:Disconnect()
+	            connection = nil
+	        end
+	    end
 	end
 	
 	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
