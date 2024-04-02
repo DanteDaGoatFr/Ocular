@@ -510,7 +510,7 @@ local function CKTW_fake_script() -- ImageButton_2.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -547,7 +547,7 @@ local function KHUTQNA_fake_script() -- ImageButton_3.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -584,7 +584,7 @@ local function YHGS_fake_script() -- ImageButton_4.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("rEvents"):WaitForChild("orbEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
@@ -693,7 +693,7 @@ local function CVOBWMT_fake_script() -- ImageButton_5.LocalScript
 				}
 	
 				game:GetService("ReplicatedStorage"):WaitForChild("CitadelMain"):WaitForChild("WorkEvent"):FireServer(unpack(args))
-				wait(0.2)
+				wait(0.1)
 				if not toggleState then break end
 			end
 		else
