@@ -1,6 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
 -- Instances:
 
 local Ocular = Instance.new("ScreenGui")
@@ -405,21 +402,18 @@ local function LLCLOHA_fake_script() -- Astro.LocalScript
 	-- Reference to the local player's PlayerGui
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
 	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
 	
-	-- Names of the buttons you want to hide
 	local buttonsToHide = {"Los", "Astro"}
 	
 	local buttonsToShow = {"Give", "Farm", "back"}
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		for _, buttonName in pairs(buttonsToHide) do
 			local button = scrollingFrame:FindFirstChild(buttonName)
 			if button then
-				button.Visible = false -- Hides the button
+				button.Visible = false
 				button.Active = false
 			else
 				warn("Button not found:", buttonName)
@@ -428,7 +422,7 @@ local function LLCLOHA_fake_script() -- Astro.LocalScript
 		for _, buttonName in pairs(buttonsToShow) do
 			local button = scrollmain:FindFirstChild(buttonName)
 			if button then
-				button.Visible = true -- Hides the button
+				button.Visible = true
 				button.Active = true
 			else
 				warn("Button not found:", buttonName)
@@ -436,33 +430,27 @@ local function LLCLOHA_fake_script() -- Astro.LocalScript
 		end
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
 	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts"):WaitForChild("Astro") -- Adjust the path as necessary
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
 coroutine.wrap(LLCLOHA_fake_script)()
 local function DHFCBJ_fake_script() -- Los.LocalScript 
 	local script = Instance.new('LocalScript', Los)
-
-	-- Reference to the local player's PlayerGui
+	
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
 	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
 	
-	-- Names of the buttons you want to hide
 	local buttonsToHide = {"Los", "Astro"}
 	
 	local buttonsToShow = {"Diamonds", "Speed", "XP", "back"}
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		for _, buttonName in pairs(buttonsToHide) do
 			local button = scrollingFrame:FindFirstChild(buttonName)
 			if button then
-				button.Visible = false -- Hides the button
+				button.Visible = false 
 				button.Active = false
 			else
 				warn("Button not found:", buttonName)
@@ -471,16 +459,14 @@ local function DHFCBJ_fake_script() -- Los.LocalScript
 		for _, buttonName in pairs(buttonsToShow) do
 			local button = scrollmain:FindFirstChild(buttonName)
 			if button then
-				button.Visible = true -- Hides the button
+				button.Visible = true
 				button.Active = true
 			else
 				warn("Button not found:", buttonName)
 			end
 		end
 	end
-	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
+
 	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts"):WaitForChild("Los") -- Adjust the path as necessary
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
@@ -599,24 +585,20 @@ coroutine.wrap(YHGS_fake_script)()
 local function JFHEN_fake_script() -- back.LocalScript 
 	local script = Instance.new('LocalScript', back)
 
-	-- Reference to the local player's PlayerGui
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm")
 	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
 	
-	-- Names of the buttons you want to hide
 	local buttonsToHide = {"Speed", "back", "Diamonds", "XP"}
 	
 	local buttonsToShow = {"Los", "Astro"}
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		for _, buttonName in pairs(buttonsToHide) do
 			local button = scrollingFrame:FindFirstChild(buttonName)
 			if button then
-				button.Visible = false -- Hides the button
+				button.Visible = false 
 				button.Active = false
 			else
 				warn("Button not found:", buttonName)
@@ -625,7 +607,7 @@ local function JFHEN_fake_script() -- back.LocalScript
 		for _, buttonName in pairs(buttonsToShow) do
 			local button = scrollmain:FindFirstChild(buttonName)
 			if button then
-				button.Visible = true -- Hides the button
+				button.Visible = true
 				button.Active = true
 			else
 				warn("Button not found:", buttonName)
@@ -633,8 +615,6 @@ local function JFHEN_fake_script() -- back.LocalScript
 		end
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
 	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("LOS"):WaitForChild("Farm"):WaitForChild("back") -- Adjust the path as necessary
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
@@ -642,12 +622,11 @@ coroutine.wrap(JFHEN_fake_script)()
 local function BCJDRC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
-	local button = script.Parent  -- Assumes the script is directly attached to the button.
+	local button = script.Parent
 	
 	local function onButtonClick()
-		local playerGui = game.Players.LocalPlayer.PlayerGui -- Correcting the location to PlayerGui
+		local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-		-- Directly navigating to the TextBox since we now assume a static path
 		local ocular = playerGui:FindFirstChild("Ocular")
 		local main = ocular and ocular:FindFirstChild("Main")
 		local scroll = main and main:FindFirstChild("Inside")
@@ -666,7 +645,7 @@ local function BCJDRC_fake_script() -- TextButton.LocalScript
 		end
 	end
 	
-	button.MouseButton1Click:Connect(onButtonClick) -- Connect the button click event to the function
+	button.MouseButton1Click:Connect(onButtonClick) 
 	
 end
 coroutine.wrap(BCJDRC_fake_script)()
@@ -708,24 +687,20 @@ coroutine.wrap(CVOBWMT_fake_script)()
 local function KVZF_fake_script() -- back_2.LocalScript 
 	local script = Instance.new('LocalScript', back_2)
 
-	-- Reference to the local player's PlayerGui
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local scrollingFrame = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro")
 	local scrollmain = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Scripts")
 	
-	-- Names of the buttons you want to hide
 	local buttonsToHide = {"Give", "back", "Farm"}
 	
 	local buttonsToShow = {"Los", "Astro"}
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		for _, buttonName in pairs(buttonsToHide) do
 			local button = scrollingFrame:FindFirstChild(buttonName)
 			if button then
-				button.Visible = false -- Hides the button
+				button.Visible = false 
 				button.Active = false
 			else
 				warn("Button not found:", buttonName)
@@ -734,7 +709,7 @@ local function KVZF_fake_script() -- back_2.LocalScript
 		for _, buttonName in pairs(buttonsToShow) do
 			local button = scrollmain:FindFirstChild(buttonName)
 			if button then
-				button.Visible = true -- Hides the button
+				button.Visible = true 
 				button.Active = true
 			else
 				warn("Button not found:", buttonName)
@@ -742,8 +717,6 @@ local function KVZF_fake_script() -- back_2.LocalScript
 		end
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
 	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Inside"):WaitForChild("Astro"):WaitForChild("back") -- Adjust the path as necessary
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
@@ -751,60 +724,45 @@ coroutine.wrap(KVZF_fake_script)()
 local function HVGPXUL_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
-	-- Reference to the local player's PlayerGui
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local main = playerGui:WaitForChild("Ocular")
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		main:Destroy()
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
-	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Close") -- Adjust the path as necessary
+	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Close")
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
 coroutine.wrap(HVGPXUL_fake_script)()
 local function OXUF_fake_script() -- Min.LocalScript 
 	local script = Instance.new('LocalScript', Min)
-
-	-- Reference to the local player's PlayerGui
+	
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		main.Visible = false
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
-	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Min") -- Adjust the path as necessary
+	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Main"):WaitForChild("Min")
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
 coroutine.wrap(OXUF_fake_script)()
 local function BRCZ_fake_script() -- Open.LocalScript 
 	local script = Instance.new('LocalScript', Open)
 
-	-- Reference to the local player's PlayerGui
 	local playerGui = game.Players.LocalPlayer.PlayerGui
 	
-	-- Reference to the SpellbookUI's ScrollingFrame
 	local main = playerGui:WaitForChild("Ocular"):WaitForChild("Main")
 	
-	-- Function to hide the specified buttons
 	local function hideButtons()
 		main.Visible = true
 	end
 	
-	-- Optionally, connect this function to an event, such as a button click
-	-- Assuming there's a button named "HideButtons" in SpellbookUI for demonstration
-	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Open") -- Adjust the path as necessary
+	local hideButtonTrigger = playerGui:WaitForChild("Ocular"):WaitForChild("Open")
 	hideButtonTrigger.MouseButton1Click:Connect(hideButtons)
 end
 coroutine.wrap(BRCZ_fake_script)()
