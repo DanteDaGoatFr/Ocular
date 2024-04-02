@@ -874,23 +874,29 @@ local function TPMG_fake_script() -- ImageButton_6.LocalScript
 	local toggleState = false 
 	local On = "rbxassetid://16978941820"
 	local Off = "rbxassetid://16978802258"
+
+	local localPlayer = game.Players.LocalPlayer
+    	local ballsFolder = game.Workspace:FindFirstChild("Balls")
+    	if not ballsFolder then return end
+    
+    	local rootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
+   	if not rootPart then return end
 	
 	local function onToggleButtonClicked()
 	    toggleState = not toggleState
 	    toggleButton.Image = toggleState and On or Off
 	    
-	    if toggleState then
-	        if not connection then
-	            connection = game:GetService("RunService").Heartbeat:Connect(checkPositions)
-	        end
-	    else
+	    while toggleState do
+		for _, ball in pairs(ballsFolder:GetChildren()) do
+        	if ball:IsA("BasePart") then
+            		local distance = (ball.Position - rootPart.Position).magnitude
+			print(distance)
+		end
+		if not toggleState then break end
+	     end
 
-	        if connection then
-	            connection:Disconnect()
-	            connection = nil
-	        end
-	    end
-	end
+	        
+		end
 	
 	toggleButton.MouseButton1Click:Connect(onToggleButtonClicked)
 	
