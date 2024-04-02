@@ -832,7 +832,7 @@ local function checkPositions()
 	local RunService = game:GetService("RunService")
 	local localPlayer = game.Players.LocalPlayer 
 	local ballsFolder = game.Workspace:FindFirstChild("Balls")
-	local playerName = LocalPlayer.Name
+	local playerName = localPlayer.Name
     
     local rootPart = localPlayer.Character and localPlayer.Character:FindFirstChild("HumanoidRootPart")
     if not rootPart then return end
